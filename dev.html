@@ -1,0 +1,51 @@
+<!doctype html>
+<html ng-app="simgApp">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+
+<!-- ================================================================ -->
+<!-- NOTE you must specify the right order of js's loading  sequence. --> 
+<!-- The dependent js's must proceed the js' that depends on the former. -->
+<!-- =============================================================== -->
+
+<!-- nprogress -->
+<link rel="stylesheet" href="bower_components/nprogress/nprogress.css">
+<script src="bower_components/nprogress/nprogress.js"></script>
+
+<!-- font awesome -->
+<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+
+<!-- jquery -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<!-- jquery : jquery-canvas-area-draw -->
+<script src="lib/juqery-canvas-area-draw/dist/jquery.canvasAreaDraw.js"></script>
+
+<!-- load angular and dependent libraries -->
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+<!-- load IPE modules -->
+<script src="app.js"></script>
+<link rel="stylesheet" href="simg.css">
+
+<!-- load IPE apps -->
+<!-- image -->
+<script src="image/simg-image-app.js"></script>
+
+<!-- draw polygon -->
+<script src="draw/simg-draw-directive.js"></script>
+<script src="draw/simg-draw-app.js"></script>
+
+<!-- lists -->
+<script src="lists/simg-lists-app.js"></script>
+
+</head>
+
+<body>
+	<div ui-view></div>
+</body>
+
+</html>

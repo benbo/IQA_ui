@@ -1,0 +1,24 @@
+<div ng-app="simgListsApp" class="container">
+    <div ng-controller="simgListsAppCtrl">
+
+        Displaying {{itemCount()}}/{{state.totalImages}} images.
+
+        <div class="card-deck-wrapper">
+            <div class="card-deck m-y-2" ng-repeat="images in imageGroups">
+                <div class="card" ng-repeat="image in images">
+                    <img class="card-img-top" data-ng-src="{{image.url}}" alt="{{image.name}}" width="100%">
+                    <div class="card-block">
+                        <h4 class="card-title">{{image.name}}</h4>
+                        <p class="card-text">{{image.score}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-primary btn-lg btn-block" ng-click="addMoreItems(6)">Load More</button>
+        <button class="btn btn-default btn-lg btn-block" ng-click="cancel()">Cancel</button>
+
+
+    </div>
+</div>
+

@@ -1,0 +1,27 @@
+{
+  "name": "imgapi",
+  "version": "0.0.0",
+  "authors": [
+    "Donghan Wang <donghanw@cs.cmu.edu>"
+  ],
+  "description": "IPE",
+  "main": "ipe.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "event/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.5.0",
+    "angular-ui-router": "~0.2.11",
+    "bootstrap": "~4.0.0",
+    "font-awesome": "~4.4.0",
+    "jquery": "~2.2.3",
+    "nprogress": "~0.2.0"
+  }
+}
